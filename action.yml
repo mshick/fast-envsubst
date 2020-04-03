@@ -1,5 +1,5 @@
-name: "Envsubst Action"
-description: "Like envsubst, but in a GitHub Action."
+name: "Fast Envsubst"
+description: "Like envsubst in a GitHub Action using the Node.js runtime."
 inputs:
   in-file:
     description: "the template or input file"

@@ -1,4 +1,4 @@
-# envsubst-action
+# fast-envsubst
 
 > A GitHub Action which is a light wrapper around the
 > [envsub](https://github.com/danday74/envsub) package, providing a GitHub
@@ -7,7 +7,7 @@
 ## Usage
 
 ```yaml
-- uses: mshick/envsubst-action@v1
+- uses: mshick/fast-envsubst@v1
   env:
     FOO_VALUE: cat good
     BAR_VALUE: dog food

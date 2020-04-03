@@ -1,5 +1,5 @@
 {
-  "name": "@mshick/envsubst-action",
+  "name": "@mshick/fast-envsubst",
   "version": "1.0.0",
   "description": "A GitHub Action which mimics envsubst.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mshick/envsubst-action.git"
+    "url": "git+https://github.com/mshick/fast-envsubst.git"
   },
   "keywords": [
     "GitHub",
@@ -23,9 +23,9 @@
   "author": "Michael Shick <m@shick.us>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mshick/envsubst-action/issues"
+    "url": "https://github.com/mshick/fast-envsubst/issues"
   },
-  "homepage": "https://github.com/mshick/envsubst-action#readme",
+  "homepage": "https://github.com/mshick/fast-envsubst#readme",
   "dependencies": {
     "@actions/core": "^1.2.3",
     "@actions/github": "^2.1.1",
