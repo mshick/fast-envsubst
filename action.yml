@@ -8,7 +8,7 @@ inputs:
     description: "the generated output file"
     required: true
 branding:
-  icon: message-circle
+  icon: dollar-sign
   color: purple
 runs:
   using: "node12"
