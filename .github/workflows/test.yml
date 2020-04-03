@@ -1,0 +1,16 @@
+name: "test-local"
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: npm ci
+
+      - uses: ./
+        with:
+          in-file: fixtures/example.yaml.in
+          out-file: fixtures/example.yaml

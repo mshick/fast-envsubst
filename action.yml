@@ -1,0 +1,15 @@
+name: "Envsubst Action"
+description: "Like envsubst, but in a GitHub Action."
+inputs:
+  in-file:
+    description: "the template or input file"
+    required: true
+  out-file:
+    description: "the generated output file"
+    required: true
+branding:
+  icon: message-circle
+  color: purple
+runs:
+  using: "node12"
+  main: "dist/index.js"
