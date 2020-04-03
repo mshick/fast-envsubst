@@ -1,4 +1,4 @@
-# fast-envsubst
+# Fast Envsubst
 
 > A GitHub Action which is a light wrapper around the
 > [envsub](https://github.com/danday74/envsub) package, providing a GitHub
