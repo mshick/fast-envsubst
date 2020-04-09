@@ -7,6 +7,9 @@ inputs:
   out-file:
     description: "the generated output file"
     required: true
+  env-file:
+    description: "provide an env file, loaded with dotenv"
+    required: false
 branding:
   icon: dollar-sign
   color: purple
