@@ -10,6 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - run: mkdir -p __tests__/runner
+
       - uses: ./
         env:
           FOO_VALUE: cat good
