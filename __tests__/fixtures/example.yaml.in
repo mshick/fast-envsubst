@@ -1,0 +1,4 @@
+example:
+  foo: ${FOO_VALUE}
+  bar: ${BAR_VALUE}
+  roger: ${ROGER}

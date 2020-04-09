@@ -4,9 +4,10 @@
   "description": "A GitHub Action which mimics envsubst.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint index.js",
-    "package": "ncc build index.js -o dist",
-    "test": "eslint index.js"
+    "build": "tsc --noEmit && ncc build fast-envsubst.ts -o dist -m",
+    "lint": "eslint . --ext .ts",
+    "test": "tsc --noEmit && jest",
+    "clean": "rm -rf node_modules dist package-lock.json __tests__/runner/**/*"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
     "GitHub",
     "Actions",
     "javascript",
+    "typescript",
     "config files",
     "env",
     "envsubst"
@@ -28,12 +30,21 @@
   "homepage": "https://github.com/mshick/fast-envsubst#readme",
   "dependencies": {
     "@actions/core": "^1.2.3",
-    "@actions/github": "^2.1.1",
     "dotenv": "^8.2.0",
     "envsub": "^4.0.7"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
     "@zeit/ncc": "^0.22.0",
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
   }
 }

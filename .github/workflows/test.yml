@@ -1,4 +1,4 @@
-name: "test-local"
+name: 'test-action'
 on:
   push:
     branches:
@@ -15,8 +15,8 @@ jobs:
           FOO_VALUE: cat good
           BAR_VALUE: dog food
         with:
-          env-file: fixtures/example.env
-          in-file: fixtures/example.yaml.in
-          out-file: fixtures/example.yaml
+          env-file: __tests__/fixtures/example.env
+          in-file: __tests__/fixtures/example.yaml.in
+          out-file: __tests__/runner/example.yaml
 
-      - run: cat fixtures/example.yaml
+      - run: cat __tests__/runner/example.yaml
