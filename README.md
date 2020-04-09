@@ -12,18 +12,36 @@
     FOO_VALUE: cat good
     BAR_VALUE: dog food
   with:
-    in-file: fixtures/example.yaml.in
-    out-file: fixtures/example.yaml
+    env-file: __tests__/fixtures/example.env
+    in-file: __tests__/fixtures/example.yaml.in
+    out-file: __tests__/runner/example.yaml
 ```
 
-**example.yaml.in**
+input: **example.env**
+
+```
+ROGER=RABBIT
+```
+
+input: **example.yaml.in**
 
 ```yaml
 example:
   foo: ${FOO_VALUE}
   bar: ${BAR_VALUE}
+  roger: ${ROGER}
+```
+
+output: **example.yaml**
+
+```yaml
+example:
+  foo: cat good
+  bar: dog food
+  roger: RABBIT
 ```
 
 ## Features
 
 - Fast, runs in the GitHub Actions node.js runtime; no Docker pull needed.
+- Provide an env file and have it loaded into your substitution environment
