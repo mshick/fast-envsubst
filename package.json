@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/mshick/fast-envsubst#readme",
   "dependencies": {
-    "@actions/core": "^1.2.3",
+    "@actions/core": "^1.2.6",
     "dotenv": "^8.2.0",
     "envsub": "^4.0.7"
   },
